@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/edit_assessment"
+        android:title="@string/edit_assessment" />
+    <item
+        android:id="@+id/set_assessmentAlert"
+        android:title="@string/setAlert"/>
+</menu>

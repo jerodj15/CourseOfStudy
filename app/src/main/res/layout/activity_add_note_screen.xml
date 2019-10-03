@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteScreen">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <TextView
+                android:id="@+id/noteTitleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aTitle"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <EditText
+                android:id="@+id/noteTitleET"
+                android:layout_width="313dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_column="1"
+                app:layout_row="0" />
+        </android.support.v7.widget.GridLayout>
+
+        <EditText
+            android:id="@+id/noteTextMLT"
+            style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:background="#98C6EE"
+            android:backgroundTint="#6673B4DD"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/typeSomething"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/cancelNoteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="cancelNoteButtonPressed"
+                android:text="@string/cancelButton"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/saveNoteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="saveNoteButtonPressed"
+                android:text="@string/saveButton"
+                app:layout_column="2"
+                app:layout_row="0" />
+        </android.support.v7.widget.GridLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

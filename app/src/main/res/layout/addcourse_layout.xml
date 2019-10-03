@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CoursesScreen">
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/endDateButton"
+            android:layout_width="41dp"
+            android:layout_height="36dp"
+            android:onClick="endDatePickPressed"
+            android:text="@string/elipses"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/courseTitle"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/courseTitleET"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ems="10"
+            android:focusableInTouchMode="true"
+            android:inputType="textPersonName"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/startTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/startDate"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <EditText
+            android:id="@+id/startDateET"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/startDateButton"
+            android:layout_width="41dp"
+            android:layout_height="36dp"
+            android:onClick="startDatePickPressed"
+            android:text="@string/elipses"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/endTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/endDate"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/endDateET"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <Space
+            android:layout_width="120dp"
+            android:layout_height="28dp"
+            app:layout_column="0"
+            app:layout_row="6" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="cancelButtonPressed"
+            android:text="@string/cancelButton"
+            app:layout_column="0"
+            app:layout_row="7" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="saveButtonPressed"
+            android:text="@string/saveButton"
+            app:layout_column="1"
+            app:layout_row="7" />
+
+        <TextView
+            android:id="@+id/courseTermIDTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/term"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <Spinner
+            android:id="@+id/termSpinner"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/statusTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/courseStatus"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+        <Spinner
+            android:id="@+id/statusSpinner"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            app:layout_column="1"
+            app:layout_row="4" />
+
+        <TextView
+            android:id="@+id/mentorTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mentor"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_column="0"
+            app:layout_row="5" />
+
+        <Spinner
+            android:id="@+id/spinnerMentor"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            app:layout_column="1"
+            app:layout_row="5" />
+
+        <Button
+            android:id="@+id/addMentorButton"
+            android:layout_width="41dp"
+            android:layout_height="36dp"
+            android:onClick="createMentorButtonPressed"
+            android:text="@string/elipses"
+            app:layout_column="2"
+            app:layout_row="5" />
+    </android.support.v7.widget.GridLayout>
+</android.support.constraint.ConstraintLayout>

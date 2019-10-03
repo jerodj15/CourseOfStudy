@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditCourseScreen">
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/eCourseTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/courseTitle"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/eStartDateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/startDate"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/eEndDateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/endDate"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/eTermET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/term"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/eStatusET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/courseStatus"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+        <TextView
+            android:id="@+id/eMentorET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mentor"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_column="0"
+            app:layout_row="5" />
+
+        <EditText
+            android:id="@+id/eCourseTitleET"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/eStartDateET"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <EditText
+            android:id="@+id/eEndDateET"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <Spinner
+            android:id="@+id/eTermSpinner"
+            android:layout_width="170dp"
+            android:layout_height="44dp"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <Spinner
+            android:id="@+id/eStatusSpinner"
+            android:layout_width="170dp"
+            android:layout_height="44dp"
+            app:layout_column="1"
+            app:layout_row="4" />
+
+        <Spinner
+            android:id="@+id/eMentorSpinner"
+            android:layout_width="170dp"
+            android:layout_height="44dp"
+            app:layout_column="1"
+            app:layout_row="5" />
+
+        <Button
+            android:id="@+id/eStartDateButton"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:onClick="startDatePickPressed"
+            android:text="@string/elipses"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/eEndDateButton"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:onClick="endDatePickPressed"
+            android:text="@string/elipses"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/eMentorButton"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:onClick="createMentorButtonPressed"
+            android:text="@string/elipses"
+            app:layout_column="2"
+            app:layout_row="5" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="184dp"
+            android:layout_height="60dp"
+            app:layout_column="0"
+            app:layout_row="6" />
+
+        <Button
+            android:id="@+id/eCancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="cancelButtonPressed"
+            android:text="@string/cancelButton"
+            app:layout_column="0"
+            app:layout_row="7" />
+
+        <Button
+            android:id="@+id/eSaveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="saveButtonPressed"
+            android:text="@string/saveButton"
+            app:layout_column="1"
+            app:layout_row="7" />
+
+    </android.support.v7.widget.GridLayout>
+</android.support.constraint.ConstraintLayout>
